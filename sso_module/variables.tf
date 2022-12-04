@@ -17,3 +17,7 @@ variable "login_url" {
 variable "homepage_url" {
     type = string
 }
+
+variable "app_gallery_name" {
+    type = string
+}

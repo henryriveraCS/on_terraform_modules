@@ -10,9 +10,9 @@ data "azuread_group" "aad_group" {
     security_enabled = true
 }
 
-# Fetching the Azure AD Gallery application for Zendesk
+# Fetching the specified Azure AD Gallery application
 data "azuread_application_template" "app_template" {
-    display_name = var.app_template_name
+    display_name = var.app_gallery_name
 }
 
 # Creating the application
